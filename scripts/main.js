@@ -29,7 +29,6 @@ async function open_terminal(){
   createCode("about me", "Who am i and what do i do.");
   createCode("all", "See all commands.");
   createCode("social -a", "All my social networks.");
-  createCode("music", "Show the audio source.");
 
   await delay(500);
   new_line();
@@ -75,7 +74,6 @@ async function getInputValue(){
     createCode("about me", "Who am i and what do i do.");
     createCode("social -a", "All my social networks.");
     createCode("clear", "Clean the terminal.");
-    createCode("music", "Show the audio source.");
     
   }
   else if(value === "projects"){
@@ -109,13 +107,7 @@ createText("<a href='https://khm.ftp.sh' target='_blank'><i class='fa fa-globe w
     createText(`command not found: ${value}`)
   }
 }
-async function displayAudioSrc() {
-    createText("Fetching audio source...");
-    await delay(500);
-    let audioElement = document.getElementById("myAudio");
-    let audioSrc = audioElement.src;
-    createText(`Audio source: ${audioSrc}`);
-}
+
 function trueValue(value){
   
   const div = document.createElement("section");
