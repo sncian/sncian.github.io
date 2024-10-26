@@ -79,8 +79,6 @@ async function getInputValue(){
   else if(value === "projects"){
     trueValue(value);
     createText("<a href='https://fz.rf.gd' target='_blank'><i class='fa fa-globe white'></i> File Manager</a>")
-createText("<a href='https://kps.ftp.sh' target='_blank'><i class='fa fa-globe white'></i> Kallos School Management System</a>")
-createText("<a href='https://khm.ftp.sh' target='_blank'><i class='fa fa-globe white'></i> Kallos Hotel Management System</a>")
   }
   else if(value === "about me"){
     trueValue(value);
